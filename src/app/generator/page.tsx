@@ -1,3 +1,5 @@
+import PartForm from "@/components/PartForm";
+
 export default function GeneratorPage() {
   return (
     <div className="min-h-screen flex flex-col mx-auto container justify-center px-4">
@@ -12,6 +14,7 @@ export default function GeneratorPage() {
           instructions.
         </p>
       </div>
+      <PartForm />
     </div>
   );
 }
