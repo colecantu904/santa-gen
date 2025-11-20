@@ -79,7 +79,7 @@ export async function POST(request: NextRequest) {
 
     pairings.forEach((receiver, giver) => {
       const emailPromise = resend.emails.send({
-        from: "Secret Santa <onboarding@resend.dev>",
+        from: "Santa Gen <info@updates.kolbemosher.tech>",
         to: [giver.email],
         subject: `🎅 Your Secret Santa Assignment!`,
         react: React.createElement(SendEmailTemplate, {

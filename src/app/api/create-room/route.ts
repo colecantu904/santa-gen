@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email
     try {
       await resend.emails.send({
-        from: "Santa Gen <onboarding@resend.dev>",
+        from: "Santa Gen <info@updates.kolbemosher.tech>",
         to: email,
         subject: "Welcome to Secret Santa - Room Created!",
         react: React.createElement(CreateEmailTemplate, {
